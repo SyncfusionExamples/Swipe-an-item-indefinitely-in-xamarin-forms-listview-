@@ -57,7 +57,7 @@ namespace Swiping
                 ListView.SwipeOffset = ListView.Height;
         }
 
-        private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
+        private void ListView_SwipeEnded(object sender, Syncfusion.ListView.XForms.SwipeEndedEventArgs e)
         {
             SwipingViewModel.ItemIndex = e.ItemIndex;
 
@@ -67,7 +67,7 @@ namespace Swiping
                 e.SwipeOffset = 120;
         }
 
-        private void ListView_SwipeStarted(object sender, SwipeStartedEventArgs e)
+        private void ListView_SwipeStarted(object sender, Syncfusion.ListView.XForms.SwipeStartedEventArgs e)
         {
             SwipingViewModel.ItemIndex = -1;
         }
